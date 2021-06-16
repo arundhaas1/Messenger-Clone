@@ -33,8 +33,6 @@ function Message() {
 
    const sendMessage=(e)=>{
     e.preventDefault();
-
-
     db.collection("messenger").add({
         message : input,
         username : name,
@@ -42,7 +40,7 @@ function Message() {
     })
 
         // setMessages([...messages,{username :name , message:input}])
-        // setInput('')
+        setInput("")
         // e.target.value=""
 
     }
