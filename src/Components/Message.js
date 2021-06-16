@@ -54,7 +54,7 @@ function Message() {
                  </div>
                  
                         <div className="welcome">
-                          <h1>WELCOME {name}</h1>
+                          <h1>Welcome {name}</h1>
                         </div>
                         
                         
