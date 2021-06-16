@@ -49,21 +49,29 @@ function Message() {
     return (
         <div>
           <div className="full">
+          <h4>©Arun Dhas</h4>
+
                  <div className="section">
                         <img alt="" className="logo" src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_FB-Messenger-512.png" />
                  </div>
+                 
                         <div className="welcome">
                           <h1>WELCOME {name}</h1>
                         </div>
                         
+                        
                      <div >
                      <form className="form">
-                            <FormControl className="controls">
-                                <Input placeholder="Enter the Message" value={input} onChange={e=>setInput(e.target.value)} />
-                                <IconButton variant="contained" disabled={!input} color="primary" type="submit" onClick={sendMessage}>
-                                    <SendIcon />
-                                </IconButton>
+                            <FormControl>
+                                <div  className="controls">
+                                 <Input className="inputa" placeholder="Enter the Message" value={input} onChange={e=>setInput(e.target.value)} />
+
                                 
+                                 <IconButton className="icona" variant="contained" disabled={!input} color="primary" type="submit" onClick={sendMessage}>
+                                        <SendIcon />
+                                    </IconButton>
+                                 </div>
+
                             </FormControl>
                             
                         </form>

@@ -36,6 +36,20 @@
 
 .controls{
     display: flex !important;
+}
 
+.icona{
+    flex: 0 !important;
+}
 
+.inputa{
+    flex: 1 !important;
+    width: 94vw !important;
+}
+
+h4{
+    opacity: 0.3;
+    /* margin-bottom: 30px !important; */
+    text-align: center;
+    width: 100%;
 }
