@@ -1,0 +1,41 @@
+.logo{
+    width: 80px;
+    height: 75px;
+}
+
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e9e9eb;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.full{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 50px;
+    /* border-bottom: 2px solid rgb(122, 122, 122,0.4); */
+}
+
+.controls{
+    display: flex !important;
+
+
+}
