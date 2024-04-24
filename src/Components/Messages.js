@@ -14,7 +14,7 @@ console.log("username is",username)
                 <Card className={isUser ? 'usercard' : 'guestcard'}>
                 <CardContent>
                     <Typography color="initial" variant="h5" component="h2">
-                    {!isUser && `${text.username || "Unknown User" }: `} {text.message}
+                        <p dangerouslySetInnerHTML={{ __html: `${!isUser && `${text.username || "Unknown User" }: `} {text.message}` }} />
                     </Typography>
                 </CardContent>
             </Card>
