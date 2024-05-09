@@ -47,7 +47,7 @@ function Message() {
     return (
         <div>
           <div className="full">
-          <h4>©Arun Dhas</h4>
+          <h4>Lets learn security</h4>
 
                  <div className="section">
                         <img alt="" className="logo" src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_FB-Messenger-512.png" />

@@ -10,11 +10,21 @@ console.log("username is",username)
 
     return (
         
-           <div className="mes" ref={ref} className={`card ${isUser && 'cardme'}`}>
+           <div className={`card mes ${isUser && 'cardme'}`} ref={ref}>
                 <Card className={isUser ? 'usercard' : 'guestcard'}>
                 <CardContent>
                     <Typography color="initial" variant="h5" component="h2">
-                        <p dangerouslySetInnerHTML={{ __html: `${!isUser && `${text.username || "Unknown User" }: `} {text.message}` }} />
+                    <p>
+                        {text.message && (
+                            <>
+                            {!isUser && (
+                                <span style={{fontWeight:'bold'}}>{text.username || "Unknown User"} : </span>
+                            )}
+                            <span dangerouslySetInnerHTML={{ __html: text.message }} />
+                            </>
+                        )}
+                    </p>
+
                     </Typography>
                 </CardContent>
             </Card>
